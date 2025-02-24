@@ -14,13 +14,24 @@ body {
     background-color: white;
 }
 
+.carousel-big-container-with-arrow{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    top: -50px;
+}
+
 .carousel-container {
     display: flex;
     justify-content: center;
     gap: 53px;
     padding: 20px 0px;
-    position: relative;
-    top: -50px;
+}
+
+.carousel-card-container {
+    display: flex;
+    gap: 30px;
 }
 
 .carousel-container img {
@@ -58,17 +69,23 @@ body {
     font-weight: 300;
     font-size: 16px;
     font-style: italic;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
+
 
 @keyframes fade-slide {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateX(100%);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
@@ -382,12 +399,14 @@ body {
     transform: rotate(180deg);
     align-self: center;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .right-arrow {
     fill: #EAEAEA;
     align-self: center;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .right-arrow:hover,

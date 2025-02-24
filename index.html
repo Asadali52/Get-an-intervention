@@ -41,7 +41,7 @@
           <li>about</li>
           <li>contact</li>
         </ul>
-        <p>CALL NOW FOR A CONSULT  <span class="p-span-consult"> XXX.XXX.XXXX</span></p>
+        <p>CALL NOW FOR A CONSULT <span class="p-span-consult"> XXX.XXX.XXXX</span></p>
 
       </div>
     </div>
@@ -60,20 +60,20 @@
         <p class="contact-use-form-heading">Contact Us</p>
         <div class="inputs-big-container">
           <div class="form-input-group">
-            <label for="first-name">First Name</label>
             <input id="first-name" type="text">
+            <label for="first-name">First Name</label>
           </div>
           <div class="form-input-group">
-            <label for="last-name">Last Name</label>
             <input id="last-name" type="text">
+            <label for="last-name">Last Name</label>
           </div>
           <div class="form-input-group">
-            <label for="business-email">Business Email</label>
             <input id="business-email" type="text">
+            <label for="business-email">Business Email</label>
           </div>
           <div class="form-input-group">
-            <label for="company">Company</label>
             <input id="company" type="text">
+            <label for="company">Company</label>
           </div>
           <div class="custom-select">
             <div class="selected">Country</div>
@@ -167,20 +167,22 @@
   </div>
 
   <div class="component-main-container">
-    <div class="carousel-container">
 
+    <div class="carousel-big-container-with-arrow">
       <svg class="left-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M11.76 8.24L27.52 24L11.76 39.76L16 44L36 24L16 4L11.76 8.24Z" />
       </svg>
+      <div class="carousel-container">
 
-      <img src="" alt="user" class="reviewer-img" />
-      <img src="commas.svg" height="60px" width="60px" alt="commas" class="commas-small">
-      <div class="content-con">
-        <div class="reviewer-name-con">
-          <h3></h3>
-          <img src="commas.svg" height="60px" width="60px" alt="commas" class="commas-big">
+        <img src="" alt="user" class="reviewer-img" />
+        <img src="commas.svg" height="60px" width="60px" alt="commas" class="commas-small">
+        <div class="content-con">
+          <div class="reviewer-name-con">
+            <h3></h3>
+            <img src="commas.svg" height="60px" width="60px" alt="commas" class="commas-big">
+          </div>
+          <p class="viewer-description"></p>
         </div>
-        <p class="viewer-description"></p>
       </div>
       <svg class="right-arrow" width="48" height="48" viewBox="0 0 48 48" fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -303,7 +305,8 @@
           <img src="Checkmark.svg" alt="">
           <p>Needs Assessment:</p>
         </div>
-        <p class="video-section-checkmark-para">The Advocacy Evaluation Toolkit contains the instruments used to collect data for evaluating the Consumer
+        <p class="video-section-checkmark-para">The Advocacy Evaluation Toolkit contains the instruments used to collect
+          data for evaluating the Consumer
           Voices for Coverage program. </p>
       </div>
       <div>
@@ -311,14 +314,16 @@
           <img src="Checkmark.svg" alt="">
           <p>Insurance Advocacy</p>
         </div>
-        <p class="video-section-checkmark-para">We are committed to advocating for appropriate coverage and payment policies.</p>
+        <p class="video-section-checkmark-para">We are committed to advocating for appropriate coverage and payment
+          policies.</p>
       </div>
       <div>
         <div class="video-section-checkmark-heading">
           <img src="Checkmark.svg" alt="">
           <p>Treatment Planning & Placement</p>
         </div>
-        <p class="video-section-checkmark-para">Patients can better understand medical procedures, discharge instructions, etc.</p>
+        <p class="video-section-checkmark-para">Patients can better understand medical procedures, discharge
+          instructions, etc.</p>
       </div>
     </div>
     <div class="video-section">
@@ -351,12 +356,12 @@
   <div id="videoModal" class="modal">
     <div class="modal-content">
       <span class="close" id="closeModal">&times;</span>
-      <video id="videoPlayer" controls>
-        <source src="video.mov" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <iframe id="videoPlayer" width="100%" height="100%" src="https://www.youtube.com/embed/MRXc0G3Njg8"
+        frameborder="0" allowfullscreen>
+      </iframe>
     </div>
   </div>
+
 
   <div class="app-bottom-bar">
     <p>@2019 Get an Intervention Inc. All rights reserved.</p>

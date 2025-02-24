@@ -103,6 +103,8 @@
     /* padding: 20px; */
     position: relative;
     width: 90%;
+    overflow: hidden;
+    height: 50vh;
     max-width: 700px;
     border-radius: 10px;
 }

@@ -4,7 +4,7 @@ const reviews = [
     {
         name: "Abbie Harvey",
         image: "reviewer-img.png",
-        text: "I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love and care that they truly deserve."
+        text: "I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments."
     },
     {
         name: "John Doe",
@@ -28,25 +28,24 @@ const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
 const indicators = document.querySelectorAll(".indicator-circle-con span");
 
+const carouselContainer = document.querySelector(".carousel-container");
+
 function updateReview(index) {
-    reviewerImg.classList.remove("fade-slide");
-    reviewerName.classList.remove("fade-slide");
-    reviewText.classList.remove("fade-slide");
+    carouselContainer.classList.remove("fade-slide");
 
     setTimeout(() => {
         reviewerImg.src = reviews[index].image;
         reviewerName.textContent = reviews[index].name;
         reviewText.textContent = reviews[index].text;
 
-        reviewerImg.classList.add("fade-slide");
-        reviewerName.classList.add("fade-slide");
-        reviewText.classList.add("fade-slide");
+        carouselContainer.classList.add("fade-slide");
 
         indicators.forEach((circle, i) => {
             circle.style.backgroundColor = i === index ? "#1E9658" : "#B0B0B0";
         });
     }, 50);
 }
+
 
 updateReview(currentIndex);
 
@@ -138,4 +137,18 @@ window.addEventListener("click", function (event) {
     if (event.target === modal) {
         closeModal();
     }
+});
+
+// form input 
+
+document.querySelectorAll('.form-input-group input').forEach(input => {
+    function updateLabel() {
+        if (input.value.trim() !== "") {
+            input.classList.add('filled');
+        } else {
+            input.classList.remove('filled');
+        }
+    }
+    input.addEventListener('blur', updateLabel);
+    updateLabel();
 });

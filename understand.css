@@ -228,6 +228,7 @@ ul {
     padding: 0 10px;
 }
 
+/* Default label position (centered) */
 .form-input-group label {
     position: absolute;
     left: 10px;
@@ -246,20 +247,32 @@ ul {
     background-color: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: white !important;
     padding: 10px 0;
     font-size: 16px;
 }
 
-.form-input-group:focus-within label,
-.form-input-group input:not(:placeholder-shown)+label {
+.form-input-group input:focus+label,
+.form-input-group input.filled+label {
     top: 0;
-    transform: translateY(-50%);
     font-size: 14px;
     left: 15px;
     background-color: #2A7D6C;
     padding: 0 5px;
 }
+
+.form-input-group input:-webkit-autofill,
+.form-input-group input:-webkit-autofill:hover,
+.form-input-group input:-webkit-autofill:focus,
+.form-input-group input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    box-shadow: 0 0 0 1000px transparent inset !important;
+    background-color: transparent !important;
+    -webkit-text-fill-color: white !important;
+    caret-color: white !important;
+    transition: background-color 9999s ease-in-out 0s;
+}
+
 
 .form-submit-btn {
     color: white;
@@ -275,10 +288,12 @@ ul {
     cursor: pointer;
     width: 221px;
     margin: 20px auto 0 auto;
+    transition: all .3s ease;
 }
 
 .form-submit-btn:hover {
     background-color: rgba(53, 187, 156, 1);
+    transform: translateY(-3px);
 }
 
 .custom-select {
@@ -379,6 +394,12 @@ ul {
     height: 52px;
     cursor: pointer;
     width: 100%;
+    transition: transform .3s ease;
+}
+
+.success-outline-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 2px #2A7D6C;
 }
 
 @media only screen and (max-width: 650px) {
@@ -432,7 +453,7 @@ ul {
         grid-template-columns: 1fr 1fr;
     }
 
-    .understand-img-container{
+    .understand-img-container {
         gap: 20px;
     }
 
@@ -509,7 +530,7 @@ ul {
         background-color: white;
     }
 
-    .understand-img-container{
+    .understand-img-container {
         padding-bottom: 30px;
     }
 
