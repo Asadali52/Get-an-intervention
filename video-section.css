@@ -26,6 +26,7 @@
     font-size: 44px;
     line-height: 52px;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 
 .transparent-watch-text {
@@ -40,16 +41,23 @@
     display: flex;
     gap: 15px;
     align-items: center;
-    padding: 20px 0 10px 0;
+    padding: 10px 0 10px 0;
 }
 
 .video-section-checkmark-heading p {
     color: white !important;
 }
 
+.video-section-checkmark-para {
+    padding-left: 30px;
+    font-weight: 300 !important;
+    font-size: 16px !important;
+}
+
 .video-section-content p {
-    font-size: 18px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
 }
 
 .video-section {
@@ -61,20 +69,20 @@
 }
 
 .video-btn {
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
     position: absolute;
     z-index: 100;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     transition: all .4s ease;
     cursor: pointer;
 }
 
 .video-btn:hover {
-    height: 130px;
-    width: 130px;
+    height: 150px;
+    width: 150px;
 }
 
 .modal {
@@ -137,7 +145,7 @@
 
 .video-section-light-white-svg {
     position: absolute;
-    left: 30px;
+    left: 20px;
 }
 
 .table-green-svg,
@@ -145,7 +153,7 @@
     display: none;
 }
 
-.video-section-logo{
+.video-section-logo {
     position: absolute;
     bottom: 30px;
     right: 30px;
@@ -158,16 +166,21 @@
     font-size: 14px;
     justify-content: space-between;
     padding: 20px 100px;
+    font-weight: 300;
 }
 
 @media only screen and (max-width: 1330px) {
     .video-section-light-green-svg {
-        left: -140px;
+        left: -121px;
     }
 
     .video-section-light-white-svg {
         position: absolute;
-        left: -120px;
+        left: -102px;
+    }
+
+    .video-section-content {
+        width: 45%;
     }
 }
 
@@ -191,6 +204,7 @@
     .video-section-content {
         padding: 70px 50px;
     }
+
     .app-bottom-bar {
         padding: 20px 50px;
     }
@@ -203,7 +217,11 @@
         gap: 10px;
     }
 
-    .video-section-logo{
+    .video-section-checkmark-heading {
+        padding: 20px 0 10px 0;
+    }
+
+    .video-section-logo {
         position: absolute;
         bottom: 30px;
         right: 50%;
@@ -241,14 +259,14 @@
         object-fit: cover;
         width: 100%;
         object-position: bottom;
-        height: 50%;
+        height: 53%;
         z-index: 2;
     }
 
     .table-white-svg {
         display: block;
         position: absolute;
-        top: 25px;
+        top: 54px;
         z-index: 1;
         object-fit: cover;
         width: 100%;
@@ -257,7 +275,7 @@
     }
 
     .video-btn {
-        top: 2%;
+        top: 8%;
         left: 50%;
         transform: translate(-50%);
     }
@@ -284,20 +302,52 @@
         left: 50%;
         transform: translate(-50%);
     }
+
     .app-bottom-bar {
-       font-size: 12px;
-       padding: 20px;
+        font-size: 12px;
+        padding: 20px;
     }
 }
 
-@media only screen and (max-width: 535px) {
+@media only screen and (max-width: 670px) {
     .video-btn {
         top: 5%;
     }
 }
 
-@media only screen and (max-width: 402px) {
+@media only screen and (max-width: 560px) {
+    .video-btn {
+        top: 3%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
     .video-btn {
         top: 0%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .video-btn {
+        top: -4%;
+    }
+
+    .video-section-main-heading {
+        white-space: wrap;
+    }
+
+    .table-green-svg {
+        height: 57%;
+    }
+
+    .table-white-svg {
+        top: 110px;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    .video-btn {
+        top: 2%;
     }
 }

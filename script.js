@@ -4,7 +4,7 @@ const reviews = [
     {
         name: "Abbie Harvey",
         image: "reviewer-img.png",
-        text: "I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments."
+        text: "I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments. Older people need attention, love and care that they truly deserve."
     },
     {
         name: "John Doe",

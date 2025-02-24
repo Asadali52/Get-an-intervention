@@ -35,7 +35,7 @@ body {
     border-bottom-right-radius: 10px;
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
@@ -55,8 +55,9 @@ body {
 }
 
 .viewer-description {
-    font-weight: 300px;
+    font-weight: 300;
     font-size: 16px;
+    font-style: italic;
 }
 
 @keyframes fade-slide {
@@ -135,28 +136,23 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     white-space: nowrap;
+    color: #333333;
 }
 
 .heading-organize-everything-container {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 32px;
     padding-top: 55px;
     padding-bottom: 35px;
+    white-space: nowrap;
 }
 
-@media only screen and (min-width: 1025px) {
-    .heading-line {
-        border-top: 1px solid lightgray;
-        padding: 2px;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 1025px) {
-    .heading-organize-everything {
-        white-space: wrap;
-    }
+.heading-line,
+.heading-organize-line {
+    border-top: 1px solid lightgray;
+    padding: 2px;
+    width: 100%;
 }
 
 .content-containter-grid {
@@ -244,6 +240,10 @@ body {
     width: 20px;
 }
 
+.commas-small {
+    display: none;
+}
+
 @media only screen and (max-width: 1024px) {
     .content-containter-grid {
         grid-template-columns: 1fr 1fr;
@@ -290,6 +290,14 @@ body {
 
     .heading-organize-everything-container {
         padding-top: 0;
+    }
+
+    .reviewer-img {
+        height: 200px;
+    }
+
+    .reviewer-name-con {
+        padding: 6px 0;
     }
 }
 
@@ -340,6 +348,32 @@ body {
     .buttons-containter-grid {
         grid-template-columns: 1fr;
     }
+
+    .heading-organize-transparent-wrap {
+        white-space: wrap;
+        width: 200px;
+        flex-shrink: 0;
+    }
+
+    .heading-organize-everything-container {
+        gap: 10px;
+    }
+
+    .heading-organize-line {
+        position: relative;
+        bottom: -16px;
+    }
+
+    .commas-big {
+        display: none;
+    }
+
+    .commas-small {
+        display: block;
+        position: absolute;
+        right: 10%;
+        top: 20%;
+    }
 }
 
 
@@ -359,4 +393,22 @@ body {
 .right-arrow:hover,
 .left-arrow:hover {
     fill: rgba(91, 200, 175, 1);
+}
+
+@media only screen and (max-width: 425px){
+    .reviewer-img{
+        height: 150px;
+    }
+    .commas-small {
+        display: block;
+        position: absolute;
+        right: 10%;
+        top: 6%;
+    }
+    .reviewer-img{
+        top: -20%;
+    }
+    .content-con{
+        margin-top: 66px;
+    }
 }
