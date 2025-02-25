@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.thankyou-body {
+    width: 100VW;
+    height: 100vh;
+    background-image: url(Mask\ Group.png);
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-direction: 20px;
+    text-align: center;
+    color: white;
+}
+
+.thanku-text-area{
+    padding: 0 10px;
+}
+
+.thanku-text-area p {
+    font-size: 20px;
+}
+
+.main-div-svg {
+    display: flex;
+    justify-content: center;
+}
+
+.thanku-text-area h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.download-button {
+    color: white;
+    background-color: rgba(91, 200, 175, 1);
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 13px;
+    width: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+    .thanku-text-area h1 {
+        font-size: 40px;
+    }
+
+    .thanku-text-area p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .thanku-text-area h1 {
+        font-size: 30px;
+    }
+
+    .thanku-text-area p {
+        font-size: 14px;
+    }
+}
