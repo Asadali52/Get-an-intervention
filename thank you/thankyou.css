@@ -21,12 +21,8 @@
     color: white;
 }
 
-.thanku-text-area{
+.thanku-text-area {
     padding: 0 10px;
-}
-
-.thanku-text-area p {
-    font-size: 20px;
 }
 
 .main-div-svg {
@@ -54,18 +50,10 @@
     .thanku-text-area h1 {
         font-size: 40px;
     }
-
-    .thanku-text-area p {
-        font-size: 18px;
-    }
 }
 
 @media only screen and (max-width: 600px) {
     .thanku-text-area h1 {
         font-size: 30px;
-    }
-
-    .thanku-text-area p {
-        font-size: 14px;
     }
 }

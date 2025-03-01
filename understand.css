@@ -291,6 +291,10 @@ ul {
     transition: all .3s ease;
 }
 
+a {
+    text-decoration: none;
+}
+
 .form-submit-btn:hover {
     background-color: rgba(53, 187, 156, 1);
     transform: translateY(-3px);
