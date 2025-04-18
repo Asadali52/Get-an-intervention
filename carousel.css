@@ -90,7 +90,7 @@ body {
 }
 
 .fade-slide {
-    animation: fade-slide 0.5s ease-in-out;
+    animation: fade-slide 0.5s  ease-in-out;
 }
 
 .indicator-circle-con {
