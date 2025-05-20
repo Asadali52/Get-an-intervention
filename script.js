@@ -3,17 +3,17 @@
 const reviews = [
     {
         name: "Abbie Harvey",
-        image: "reviewer-img.png",
+        image: "assets/reviewer-img.png",
         text: "I have been caring for my mom & dad off and on for about 10 years now, and I know the importance of me being there for appointments."
     },
     {
         name: "John Doe",
-        image: "reviewer-img2.png",
+        image: "assets/reviewer-img2.png",
         text: "Great experience! The staff was very helpful and made sure all my concerns were addressed. Highly recommend their service!"
     },
     {
         name: "Emily Smith",
-        image: "reviewer-img3.png",
+        image: "assets/reviewer-img3.png",
         text: "A truly life-changing experience. Their dedication and care made all the difference in my family's life. Thank you!"
     }
 ];
@@ -137,18 +137,4 @@ window.addEventListener("click", function (event) {
     if (event.target === modal) {
         closeModal();
     }
-});
-
-// form input 
-
-document.querySelectorAll('.form-input-group input').forEach(input => {
-    function updateLabel() {
-        if (input.value.trim() !== "") {
-            input.classList.add('filled');
-        } else {
-            input.classList.remove('filled');
-        }
-    }
-    input.addEventListener('blur', updateLabel);
-    updateLabel();
 });

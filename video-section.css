@@ -62,7 +62,7 @@
 
 .video-section {
     width: 70%;
-    background: url('video-right.png') no-repeat center center;
+    background: url('assets/video-right.png') no-repeat center center;
     background-size: cover;
     height: 644px;
     position: relative;

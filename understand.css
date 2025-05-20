@@ -1,6 +1,6 @@
 .hero-section {
     position: relative;
-    background: url("hero-sect-img.png") no-repeat center center;
+    background: url("assets/hero-sect-img.png") no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 700px;
